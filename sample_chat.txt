@@ -1,0 +1,5 @@
+User: I want to build a portfolio website in HTML and CSS. Dark theme.
+Claude: Great! Start with a single index.html, a header with your name, and sections for About, Skills and Projects. Use CSS variables for the dark colours.
+User: Header is done. Now the Projects section is not showing in 2 columns on mobile.
+Claude: That is a CSS grid issue. Add this media query: @media (max-width: 700px) { .projects { grid-template-columns: 1fr; } } and check that .projects uses display: grid on desktop.
+User: Fixed. Next I want to add a contact form, but I have no backend.
